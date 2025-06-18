@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Gejala IMS</title>
+    <link rel="stylesheet" href="/style/kuis.css" />
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-button"><- Kembali</a>
+      <h1>Kuis Gejala IMS</h1>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. Apakah Anda merasakan nyeri atau panas saat buang air kecil?</p>
+          <label><input type="radio" name="q1" value="yes" required /> Ya</label>
+          <label><input type="radio" name="q1" value="no" /> Tidak</label>
+        </div>
+
+        <div class="question">
+          <p>2. Apakah Anda melihat cairan tidak normal dari alat kelamin?</p>
+          <label><input type="radio" name="q2" value="yes" required /> Ya</label>
+          <label><input type="radio" name="q2" value="no" /> Tidak</label>
+        </div>
+
+        <div class="question">
+          <p>3. Apakah Anda mengalami luka, bintik, atau kutil di area kelamin?</p>
+          <label><input type="radio" name="q3" value="yes" required /> Ya</label>
+          <label><input type="radio" name="q3" value="no" /> Tidak</label>
+        </div>
+
+        <button type="submit">Lihat Hasil</button>
+      </form>
+
+      <div id="result" class="result"></div>
+    </div>
+
+    <script>
+      document.getElementById("quizForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const answers = [
+          document.querySelector('input[name="q1"]:checked').value,
+          document.querySelector('input[name="q2"]:checked').value,
+          document.querySelector('input[name="q3"]:checked').value,
+        ];
+
+        const yesCount = answers.filter((ans) => ans === "yes").length;
+
+        const resultDiv = document.getElementById("result");
+
+        if (yesCount === 0) {
+          resultDiv.textContent =
+            "Hasil: Anda tampaknya tidak menunjukkan gejala IMS. Tetap waspada dan jaga kesehatan!";
+        } else if (yesCount === 1 || yesCount === 2) {
+          resultDiv.textContent =
+            "Hasil: Anda menunjukkan beberapa gejala yang bisa terkait IMS. Disarankan untuk konsultasi ke tenaga medis.";
+        } else {
+          resultDiv.textContent =
+            "Hasil: Anda menunjukkan banyak gejala IMS. Segera periksakan diri ke fasilitas kesehatan.";
+        }
+      });
+    </script>
+  </body>
+</html>
