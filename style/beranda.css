@@ -160,13 +160,13 @@ body {
 
 /* Gambar background */
 .slide-1 {
-  background-image: url("/assets/slide-1.png");
+  background-image: url("../assets/slide-1.png");
 }
 .slide-2 {
-  background-image: url("/assets/slide-2.png");
+  background-image: url("../assets/slide-2.png");
 }
 .slide-3 {
-  background-image: url("/assets/slide-3.png");
+  background-image: url("../assets/slide-3.png");
 }
 
 /* Swiper Navigation Styles */
