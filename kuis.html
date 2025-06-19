@@ -3,64 +3,355 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kuis Gejala IMS</title>
-    <link rel="stylesheet" href="./style/kuis.css" />
+    <title>Kuis Pengetahuan IMS</title>
     <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/kuis.css" />
   </head>
   <body>
     <div class="container">
-      <a href="index.html" class="back-button"><- Kembali</a>
-      <h1>Kuis Gejala IMS</h1>
-      <form id="quizForm">
+      <a href="index.html" class="back-button">← Kembali</a>
+      <h1>Kuis Pengetahuan IMS</h1>
+
+      <form class="quiz-form" id="quizForm">
         <div class="question">
-          <p>1. Apakah Anda merasakan nyeri atau panas saat buang air kecil?</p>
-          <label><input type="radio" name="q1" value="yes" required /> Ya</label>
-          <label><input type="radio" name="q1" value="no" /> Tidak</label>
+          <h3>1. Apa kepanjangan dari IMS?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q1" value="0" id="q1a" />
+              <label for="q1a">A. Infeksi Menular Seksual</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q1" value="1" id="q1b" />
+              <label for="q1b">B. Infeksi Medis Serius</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q1" value="2" id="q1c" />
+              <label for="q1c">C. Imunitas Menular Sistemik</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q1" value="3" id="q1d" />
+              <label for="q1d">D. Infeksi Metabolik Sistemik</label>
+            </div>
+          </div>
         </div>
 
         <div class="question">
-          <p>2. Apakah Anda melihat cairan tidak normal dari alat kelamin?</p>
-          <label><input type="radio" name="q2" value="yes" required /> Ya</label>
-          <label><input type="radio" name="q2" value="no" /> Tidak</label>
+          <h3>2. Manakah dari berikut ini yang BUKAN merupakan gejala umum IMS?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q2" value="0" id="q2a" />
+              <label for="q2a">A. Nyeri saat buang air kecil</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q2" value="1" id="q2b" />
+              <label for="q2b">B. Keluarnya cairan abnormal dari alat kelamin</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q2" value="2" id="q2c" />
+              <label for="q2c">C. Demam tinggi berkepanjangan</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q2" value="3" id="q2d" />
+              <label for="q2d">D. Luka atau bintik di area kelamin</label>
+            </div>
+          </div>
         </div>
 
         <div class="question">
-          <p>3. Apakah Anda mengalami luka, bintik, atau kutil di area kelamin?</p>
-          <label><input type="radio" name="q3" value="yes" required /> Ya</label>
-          <label><input type="radio" name="q3" value="no" /> Tidak</label>
+          <h3>3. IMS dapat dicegah dengan cara:</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q3" value="0" id="q3a" />
+              <label for="q3a">A. Menggunakan kondom saat berhubungan seksual</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q3" value="1" id="q3b" />
+              <label for="q3b">B. Minum vitamin C setiap hari</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q3" value="2" id="q3c" />
+              <label for="q3c">C. Mandi air hangat setelah berhubungan seksual</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q3" value="3" id="q3d" />
+              <label for="q3d">D. Menghindari makanan pedas</label>
+            </div>
+          </div>
         </div>
 
-        <button type="submit">Lihat Hasil</button>
+        <div class="question">
+          <h3>4. Kapan sebaiknya seseorang memeriksakan diri ke dokter terkait IMS?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q4" value="0" id="q4a" />
+              <label for="q4a">A. Hanya jika ada gejala yang parah</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q4" value="1" id="q4b" />
+              <label for="q4b"
+                >B. Setelah 6 bulan berhubungan seksual dengan pasangan baru</label
+              >
+            </div>
+            <div class="option">
+              <input type="radio" name="q4" value="2" id="q4c" />
+              <label for="q4c">C. Segera setelah muncul gejala atau risiko tertular</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q4" value="3" id="q4d" />
+              <label for="q4d">D. Hanya jika pasangan menunjukkan gejala</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>5. Manakah pernyataan yang BENAR tentang IMS?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q5" value="0" id="q5a" />
+              <label for="q5a"
+                >A. IMS hanya menyerang orang dengan banyak pasangan seksual</label
+              >
+            </div>
+            <div class="option">
+              <input type="radio" name="q5" value="1" id="q5b" />
+              <label for="q5b">B. IMS dapat ditularkan melalui toilet umum</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q5" value="2" id="q5c" />
+              <label for="q5c"
+                >C. IMS dapat menyerang siapa saja yang aktif secara seksual</label
+              >
+            </div>
+            <div class="option">
+              <input type="radio" name="q5" value="3" id="q5d" />
+              <label for="q5d">D. IMS hanya berbahaya bagi wanita</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>6. Apa dampak IMS yang tidak diobati pada wanita?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q6" value="0" id="q6a" />
+              <label for="q6a">A. Hanya menimbulkan rasa tidak nyaman</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q6" value="1" id="q6b" />
+              <label for="q6b">B. Dapat menyebabkan kemandulan</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q6" value="2" id="q6c" />
+              <label for="q6c">C. Tidak ada dampak jangka panjang</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q6" value="3" id="q6d" />
+              <label for="q6d">D. Hanya mempengaruhi kulit</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>7. Manakah dari berikut yang merupakan IMS yang disebabkan oleh virus?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q7" value="0" id="q7a" />
+              <label for="q7a">A. Gonore</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q7" value="1" id="q7b" />
+              <label for="q7b">B. Sifilis</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q7" value="2" id="q7c" />
+              <label for="q7c">C. Herpes genital</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q7" value="3" id="q7d" />
+              <label for="q7d">D. Klamidia</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>8. Bagaimana cara yang tepat untuk memberitahu pasangan tentang IMS?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q8" value="0" id="q8a" />
+              <label for="q8a">A. Tidak perlu memberitahu jika sudah diobati</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q8" value="1" id="q8b" />
+              <label for="q8b">B. Memberitahu dengan jujur dan menyarankan pemeriksaan</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q8" value="2" id="q8c" />
+              <label for="q8c">C. Menunggu sampai pasangan menunjukkan gejala</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q8" value="3" id="q8d" />
+              <label for="q8d">D. Hanya memberitahu jika diminta</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>9. Manakah pernyataan yang SALAH tentang pengobatan IMS?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q9" value="0" id="q9a" />
+              <label for="q9a">A. Beberapa IMS dapat disembuhkan dengan antibiotik</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q9" value="1" id="q9b" />
+              <label for="q9b">B. Pengobatan harus diselesaikan sesuai petunjuk dokter</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q9" value="2" id="q9c" />
+              <label for="q9c">C. Semua IMS dapat disembuhkan total</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q9" value="3" id="q9d" />
+              <label for="q9d">D. Pengobatan dini mencegah komplikasi</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>10. Mengapa edukasi tentang IMS penting untuk remaja?</h3>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="q10" value="0" id="q10a" />
+              <label for="q10a">A. Untuk menakut-nakuti mereka</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q10" value="1" id="q10b" />
+              <label for="q10b"
+                >B. Untuk memberikan pengetahuan dalam membuat keputusan yang tepat</label
+              >
+            </div>
+            <div class="option">
+              <input type="radio" name="q10" value="2" id="q10c" />
+              <label for="q10c">C. Karena hanya remaja yang terkena IMS</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="q10" value="3" id="q10d" />
+              <label for="q10d">D. Untuk melarang mereka berhubungan seksual</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Lihat Hasil</button>
       </form>
 
-      <div id="result" class="result"></div>
+      <div class="result-container" id="resultContainer">
+        <h2>Hasil Kuis Anda</h2>
+        <div class="score-display" id="scoreDisplay">0/10</div>
+        <div class="score-message" id="scoreMessage"></div>
+
+        <div class="answers-section">
+          <h3>Kunci Jawaban</h3>
+          <div class="answer-item">
+            <span class="answer-number">1.</span>
+            <span class="correct-answer">A. Infeksi Menular Seksual</span>
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">2.</span>
+            <span class="correct-answer">C. Demam tinggi berkepanjangan</span>
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">3.</span>
+            <span class="correct-answer">A. Menggunakan kondom saat berhubungan seksual</span>
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">4.</span>
+            <span class="correct-answer"
+              >C. Segera setelah muncul gejala atau risiko tertular</span
+            >
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">5.</span>
+            <span class="correct-answer"
+              >C. IMS dapat menyerang siapa saja yang aktif secara seksual</span
+            >
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">6.</span>
+            <span class="correct-answer">B. Dapat menyebabkan kemandulan</span>
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">7.</span>
+            <span class="correct-answer">C. Herpes genital</span>
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">8.</span>
+            <span class="correct-answer"
+              >B. Memberitahu dengan jujur dan menyarankan pemeriksaan</span
+            >
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">9.</span>
+            <span class="correct-answer">C. Semua IMS dapat disembuhkan total</span>
+          </div>
+          <div class="answer-item">
+            <span class="answer-number">10.</span>
+            <span class="correct-answer"
+              >B. Untuk memberikan pengetahuan dalam membuat keputusan yang tepat</span
+            >
+          </div>
+        </div>
+
+        <button class="retry-btn" onclick="retryQuiz()">Ulangi Kuis</button>
+      </div>
     </div>
 
     <script>
+      const correctAnswers = [0, 2, 0, 2, 2, 1, 2, 1, 2, 1];
+
       document.getElementById("quizForm").addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const answers = [
-          document.querySelector('input[name="q1"]:checked').value,
-          document.querySelector('input[name="q2"]:checked').value,
-          document.querySelector('input[name="q3"]:checked').value,
-        ];
+        let score = 0;
+        const totalQuestions = correctAnswers.length;
 
-        const yesCount = answers.filter((ans) => ans === "yes").length;
-
-        const resultDiv = document.getElementById("result");
-
-        if (yesCount === 0) {
-          resultDiv.textContent =
-            "Hasil: Anda tampaknya tidak menunjukkan gejala IMS. Tetap waspada dan jaga kesehatan!";
-        } else if (yesCount === 1 || yesCount === 2) {
-          resultDiv.textContent =
-            "Hasil: Anda menunjukkan beberapa gejala yang bisa terkait IMS. Disarankan untuk konsultasi ke tenaga medis.";
-        } else {
-          resultDiv.textContent =
-            "Hasil: Anda menunjukkan banyak gejala IMS. Segera periksakan diri ke fasilitas kesehatan.";
+        for (let i = 1; i <= totalQuestions; i++) {
+          const answer = document.querySelector(`input[name="q${i}"]:checked`);
+          if (answer && parseInt(answer.value) === correctAnswers[i - 1]) {
+            score++;
+          }
         }
+
+        document.getElementById(
+          "scoreDisplay"
+        ).textContent = `Skor Anda: ${score} benar dari ${totalQuestions} soal`;
+
+        let message = "";
+
+        if (score === totalQuestions) {
+          message = "Perfect! 🎉 Anda menjawab semua soal dengan benar!";
+        } else if (score >= 8) {
+          message = "Excellent! 👏 Pengetahuan Anda tentang IMS sangat baik!";
+        } else if (score >= 6) {
+          message = "Good job! 👍 Pengetahuan Anda cukup baik, terus belajar!";
+        } else if (score >= 4) {
+          message = "Not bad! 📚 Anda perlu mempelajari lebih lanjut tentang IMS.";
+        } else {
+          message =
+            "Keep learning! 💪 Mari pelajari lebih lanjut tentang IMS untuk kesehatan yang lebih baik.";
+        }
+
+        document.getElementById("scoreMessage").textContent = message;
+        document.getElementById("resultContainer").style.display = "block";
+
+        document.getElementById("resultContainer").scrollIntoView({ behavior: "smooth" });
       });
+
+      function retryQuiz() {
+        document.getElementById("quizForm").reset();
+        document.getElementById("resultContainer").style.display = "none";
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     </script>
   </body>
 </html>
